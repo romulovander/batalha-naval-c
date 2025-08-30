@@ -1,14 +1,33 @@
-# Batalha Naval em C — Nível Novato
+# Batalha Naval em C — Novato, Aventureiro e Mestre
 
-Tabuleiro 10x10 com 2 navios de tamanho 3 (1 horizontal e 1 vertical).
-Valores: 0 = água, 3 = navio.
+Projeto didático em C para praticar **vetores, matrizes, loops e 
+condicionais**.
 
-## Como compilar
+- `0` = água  
+- `3` = navio  
+- `5` = área de habilidade (nível Mestre)
+
+## Como compilar e executar
+
+### Nível Novato
+Tabuleiro 10x10 e **2 navios** (tamanho 3): 1 horizontal e 1 vertical.
+```bash
 clang -Wall -Wextra -O2 batalha_novato.c -o batalha_novato
-
-## Como executar
 ./batalha_novato
+```
 
-## Observações
-- Coordenadas dos navios estão no main (navioHorizontal/navioVertical).
-- Há validação de limites e sobreposição.
+### Nível Aventureiro
+Tabuleiro 10x10 e **4 navios** (tamanho 3): 2 H/V + **2 diagonais**.
+```bash
+clang -Wall -Wextra -O2 batalha_aventureiro.c -o batalha_aventureiro
+./batalha_aventureiro
+```
+
+### Nível Mestre
+Habilidades com **matrizes 5x5** e **sobreposição centrada** no tabuleiro:
+- Cone (abre para baixo), Cruz e Octaedro (losango).
+```bash
+clang -Wall -Wextra -O2 batalha_mestre.c -o batalha_mestre
+./batalha_mestre
+```
+
