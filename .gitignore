@@ -1,0 +1,5 @@
+# binários/artefatos
+batalha_novato
+*.o
+# macOS
+.DS_Store
